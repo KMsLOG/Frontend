@@ -1,0 +1,126 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header 스타일 */
+header {
+    background-color: #3dd0fd; /* 배경색 */
+    color: white; /* 글씨색 */
+    padding: 10px 20px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav div {
+    flex: 1; /* 각 영역을 동일하게 나누기 */
+}
+
+.header-nav h1 {
+    margin: 0;
+}
+
+.header-nav form {
+    display: flex;
+}
+
+.header-nav input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.header-nav input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header-nav .nav-menu {
+    margin: 0 10px;
+}
+
+.header-nav .nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main 스타일 */
+main {
+    display: flex;
+    margin: 20px;
+}
+
+section {
+    flex: 3; /* 영화 목록 영역 */
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1; /* 영화 찜리스트 영역 */
+    position: sticky; /* 고정 위치 */
+    top: 20px; /* 스크롤 시 고정될 위치 */
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap; /* 반응형 배치 */
+    list-style-type: none;
+    padding: 0;
+}
+
+
+section li {
+    width: calc(33.333% - 10px); /* 3개 열로 배치, 여백 포함 */
+    margin: 5px;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* 수직 방향으로 정렬 */
+}
+
+.movie-info {
+    display: flex; /* 플렉스 박스 사용 */
+    justify-content: space-between; /* 정보와 버튼을 양쪽에 배치 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+button {
+    margin-left :0cap; /* 버튼을 오른쪽 끝으로 밀기 */
+    margin:5px;
+    padding: 8px;
+}
+
+section img {
+    max-width: 100%; /* 이미지 반응형 */
+    height: auto;
+}
+
+/* Footer 스타일 */
+footer {
+    background-color: #3dd0fd; /* 배경색 */
+    color: white; /* 글씨색 */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}

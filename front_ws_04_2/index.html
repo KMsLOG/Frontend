@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 웹사이트</title>
+    <link rel="stylesheet" href="./css/main.css"> <!-- 스타일시트 링크 -->
+</head>
+<body>
+
+<header>
+  <nav class="header-nav">
+    <div>
+      <a href="index.html"><h1>영화 관리</h1></a>
+    </div>
+    <div>
+      <form action="#">
+        <input type="text" placeholder="이름을 입력하세요" />
+        <input type="submit" value="검색" />
+      </form>
+    </div>
+    <div>
+      <span class="nav-menu"><a href="login.html">로그인</a></span>
+      <span class="nav-menu"><a href="#">로그아웃</a></span>
+      <span class="nav-menu"><a href="#">회원가입</a></span>
+      <span class="nav-menu"><a href="#">게시판</a></span>
+      <span class="nav-menu"><a href="#">마이페이지</a></span>
+    </div>
+  </nav>
+</header>
+
+<main>
+    <section>
+        <h1>영화 목록</h1>
+        <ul id="movie-list">
+          <!-- 영화 리스트 추가-->
+        </ul>
+    </section>
+    
+    <aside>
+        <h2>영화 찜리스트</h2>
+        <ul id = "movie-jjim">
+            <!-- 찜 리스트 추가 -->
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p><a href="#">이용약관</a> | <a href="#">오시는 길</a></p>
+    <p>© 2024 영화 웹사이트. 모든 권리 보유.</p>
+</footer>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
