@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사용자 정보 관리 사이트</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="header-nav">
+        <div>
+          <a href="index.html"><h1>영화 관리</h1></a>
+        </div>
+        <div>
+          <form action="#">
+            <input type="text" placeholder="이름을 입력하세요" />
+            <input type="submit" value="검색" />
+          </form>
+        </div>
+        <div>
+          <span class="nav-menu"><a href="login.html">로그인</a></span>
+          <span class="nav-menu"><a href="#">로그아웃</a></span>
+          <span class="nav-menu"><a href="register.html">회원가입</a></span>
+          <span class="nav-menu"><a href="#">게시판</a></span>
+          <span class="nav-menu"><a href="#">마이페이지</a></span>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="login-page">
+        <h1>Welcome</h1>
+        <div class="form">
+          <form name="login-form" class="login-form">
+            <input id="id" name="id" type="text" placeholder="ID" />
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="password"
+            />
+            <button class="login-btn" onclick="login()" type="button">
+              로그인
+            </button>
+            <button onclick="location.href='register.html'" type="button">
+              회원가입
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p><a href="#">이용약관</a> | <a href="#">오시는 길</a></p>
+      <p>© 2024 영화 웹사이트. 모든 권리 보유.</p>
+  </footer>
+    <script type="text/javascript" src="js/user.js"></script>
+  </body>
+</html>
